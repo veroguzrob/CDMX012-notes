@@ -1,6 +1,8 @@
-const Login = () => {
+const Login = ({loginWithGoogle}) => {
   return (
-    <button>Login with Google</button>
+    <button onClick={()=>{
+      loginWithGoogle()
+    }}>Login with Google</button>
   )
 }
 
