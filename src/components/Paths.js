@@ -1,14 +1,21 @@
 import { Routes, Route } from "react-router-dom";
-import Login from '../components/noautenticate/login/Login';
-import loginWithGoogle from '../lib/firebaseAuth'
+import Title from "./autenticate/muro/Title";
+import Login from "./noautenticate/login/Login";
+import { loginWithGoogle, logOut } from '../lib/firebaseAuth'
 
-function Paths() {
+function Paths ({isAutenticate}){
   return (
+    <section>
+      {isAutenticate?
+      <Routes>
+      <Route path="/" element={<Title logOut={logOut} />}>
+      </Route>
+    </Routes> :
     <Routes>
       <Route path="/" element={<Login loginWithGoogle={loginWithGoogle} />}>
       </Route>
-    </Routes>
-  );
+    </Routes>}
+    </section>
+  )
 }
-
 export default Paths;

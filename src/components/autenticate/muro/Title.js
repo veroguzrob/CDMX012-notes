@@ -1,10 +1,10 @@
 import './Title.css'
 
-function Title (){
+function Title ({logOut}){
   return (
     <header>
         <p>Notes List</p>
-        <button className="out" >Sign out</button>
+        <button className="out" onClick={()=>{logOut()}}>Sign out</button>
     </header>
   )
 }
