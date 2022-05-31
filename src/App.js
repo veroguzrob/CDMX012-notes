@@ -1,11 +1,12 @@
 import './App.css';
-import Title from './components/title/Title'
+import { BrowserRouter } from 'react-router-dom';
+import Paths from './components/Paths';
 
 function App() {
   return (
-    <div className="App">
-      <Title></Title>
-    </div>
+    <BrowserRouter>
+      <Paths></Paths>
+    </BrowserRouter>
   );
 }
 
