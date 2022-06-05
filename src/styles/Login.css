@@ -1,0 +1,25 @@
+button.login{
+  align-self: center;
+  padding: 0;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000080;
+  border: none;
+  display: flex;
+}
+img{
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+
+}
+p.signIn{
+  margin: 10px;
+  color: #4E5754;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  align-self: center;
+
+}
