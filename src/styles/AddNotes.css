@@ -1,0 +1,16 @@
+footer{
+  width: 700px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+button.add{
+  background-color: transparent;
+  border: transparent;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+}
