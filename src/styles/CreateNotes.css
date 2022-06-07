@@ -1,0 +1,51 @@
+section.creations {
+  width: 650px;
+  height: 500px;
+  margin: 100px auto;
+}
+
+article.notes {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.note-title {
+  margin: 0 auto;
+  width: 95%;
+  font-family: 'Arial Narrow';
+  font-size: 25px;
+  padding: 15px;
+  border: none;
+}
+
+.note_description {
+  width: 95%;
+  height: 880%;
+  margin: 0 auto;
+  border: none;
+  font-family: 'Arial Narrow';
+  font-size: 25px;
+  padding: 15px;
+}
+
+article.creation {
+  width: 650px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.create {
+  margin: 10px;
+  background-color: #4E5754;
+  padding: 15px 20px ;
+  font-family: Arial;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px #00000080;
+  border: none;
+}

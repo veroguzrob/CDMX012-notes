@@ -1,24 +1,6 @@
-.container-list{
+.container-list{border: 5px solid orchid;
   margin: 25px auto auto;
-  width: 700px;
+  width: 650px;
   height: 150px;
-  background-color: #CCABD8;
-  border-radius: 20px;
-
-}
-.title-list{
-  width: 97%;
-  height: 10%;
-  border: transparent;
-  font-family: Abril Fatface;
-  font-size: 35px;
-  padding: 20px;
-}
-.note-list{
-  width: 97%;
-  height: 75%;
-  border: transparent;
-  font-family: Abril Fatface;
-  font-size: 20px;
-  padding: 20px;
+  border-radius: 15px;
 }

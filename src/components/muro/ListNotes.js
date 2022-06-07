@@ -1,12 +1,29 @@
+import { useState, useEffect } from "react";
 import "../../styles/ListNotes.css"
+import { onGetNotes } from "../../lib/firestore";
 
-function ListNotes () {
+function ListNotes() {
+  const [notes, setNotes] = useState([]);
+  useEffect(() => {
+    onGetNotes((querySnapShot) => {
+      const aux = [];
+      
+      querySnapShot.forEach((doc) => {
+        const allnotes = doc.data();
+          aux.push(allnotes)
+      })
+      setNotes(aux)
+    })
+  }, [])
+  notes.forEach((nota) => {
+    console.log(nota);
+  })
   return (
     <section className="container-list">
-    <p className="title-list">Link de Laboratoria</p>
-    <p className="note-list">05/01/2022</p>
-    </section>  
+ 
+    </section>
   )
+
 }
 
 export default ListNotes;
