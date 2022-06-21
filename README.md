@@ -31,10 +31,9 @@ web_ usando _React_.
 
 ## 2. Prototipo de alta fidelidad
 
-(src\images\Home.png)
-(src\images\list.png)
-(src\images\note.png)
-
+<img src="./src/images/Home.png" alt="home" >
+<img src="./src/images/list.png" alt="list" >
+<img src="./src/images/note.png" alt="note">
 
 ## 3. Objetivos de Aprendizaje
 
