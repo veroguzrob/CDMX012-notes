@@ -1,6 +1,52 @@
-.container-list{border: 5px solid orchid;
-  margin: 25px auto auto;
-  width: 650px;
-  height: 150px;
-  border-radius: 15px;
+section.container-list {
+  margin: auto;
+  width: 680px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article.container-note {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom, #CCABD8 0%, #FA897B 26.04%, #FFDD94 50.91%, #D0E6A5 75%, #86E3CE 100%) 1;
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p.title {
+  border-top-left-radius: 10px;
+  border-bottom: 1px solid gray;
+  width: auto;
+  min-height: 30px;
+  padding: 8px;
+  font-family: 'Arial Narrow';
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p.text {
+  width: auto;
+  min-height: 100px;
+  font-family: 'Arial Narrow';
+  font-size: 35px;
+  padding: 8px;
+
+}
+
+button.edit {
+  background-color: transparent;
+  border: transparent;
+  align-self: flex-end;
+}
+
+.icon-edit {
+  width: 40px;
+  height: 40px;
 }

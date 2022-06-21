@@ -1,7 +1,26 @@
 import { db } from "./firebaseConfig";
-import { collection, addDoc, onSnapshot  } from "firebase/firestore";
+import { collection, addDoc, onSnapshot, getDoc, doc, updateDoc, deleteDoc } from "firebase/firestore";
 
 
-export const saveNotes = (title, note) => addDoc(collection(db, 'notes'), {title, note});
+export const saveNotes = (title, note) => addDoc(collection(db, 'notes'), { title, note });
 
 export const onGetNotes = (callback) => onSnapshot(collection(db, 'notes'), callback);
+
+export const getNote = async (idNote) => {
+  const docRef = doc(db, "notes", idNote);
+  const notadesdeinternet = await getDoc(docRef);
+
+  if (notadesdeinternet.exists()) {
+    return notadesdeinternet.data()
+  } else {
+    // doc.data() will be undefined in this case
+    console.log("No such document!");
+  }
+}
+
+export const updateOneNote = async (idNote, objStateNote) => {
+  const noteRef = doc(db, "notes", idNote);
+  return await updateDoc(noteRef, objStateNote);
+}
+
+export const deleteOneNote = (idNote) => deleteDoc(doc(db, "notes", idNote));
