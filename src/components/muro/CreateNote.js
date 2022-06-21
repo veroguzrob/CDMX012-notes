@@ -1,6 +1,7 @@
-import "../../styles/CreateNotes.css";
+import "../../styles/CreateNote.css";
 import { useNavigate } from "react-router-dom";
 import { saveNotes } from "../../lib/firestore";
+import iconSave from '../../images/save.png'
 
 function Notes() {
   const navigate = useNavigate();
@@ -11,15 +12,15 @@ function Notes() {
         <textarea placeholder="Note:" className="note_description" id="note" />
       </article>
       <article className="creation">
-        <button className="create" onClick={() => {
+        <button className="save" onClick={() => {
           const titleNote = document.getElementById("title").value;
           const textNote = document.getElementById("note").value;
 
-          saveNotes(titleNote, textNote);
-             
-          navigate("/"); 
-  
-        }}> Save </button>
+          saveNotes(titleNote, textNote,);
+
+          navigate("/");
+
+        }}> <img src={iconSave} alt="iconSave" /> </button>
       </article>
     </section >
 

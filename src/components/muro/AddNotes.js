@@ -1,5 +1,5 @@
 import "../../styles/AddNotes.css"
-import icon from "../../images/add.png"
+import iconAdd from "../../images/add.png"
 import { useNavigate } from "react-router-dom";
 
 function AddNotes() {
@@ -8,9 +8,9 @@ function AddNotes() {
   return (
     <footer>
       <button className="add" onClick={() => {
-        navigate("/createNotes");
+        navigate("/createNote");
       }} >
-        <img src={icon} alt="icon" className="icon" />
+        <img src={iconAdd} alt="iconAdd" className="icon-add" />
       </button>
     </footer>
 
