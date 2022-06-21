@@ -1,9 +1,9 @@
-# Lab Notes
+# Pin - Notes
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del Proyecto](#2-resumen-del-proyecto)
+* [1. Resumen del Proyecto](#1-resumen-del-proyecto)
+* [2. Prototipo de alta fidelidad](#2-prototipo-de-alta-fidelidad)
 * [3. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -13,33 +13,9 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Resumen del Proyecto
 
-Hoy en día no es práctico imaginar el desarrollo web sin HTML, CSS y JavaScript,
-esta última es el alma del desarrollo de aplicaciones web.
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las características _específicas_ de
-nuestra aplicación.
-
-Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
-código para reusar (lo cual es un gran valor per se), si no que adoptamos una
-**arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
-**abstracciones**, un **vocabulario**, una **comunidad**, etc.
-
-Como desarrolladora front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
-
-## 2. Resumen del Proyecto
-
-En este proyecto construiremos una aplicación para tomar notas, que nos permita
+En este proyecto se crea una aplicación para tomar notas, que nos permita
 crear, editar, eliminar y consultarlas en cualquier momento.
 
 No existe día que no tomemos notas, siempre necesitamos apuntar alguna
@@ -49,15 +25,16 @@ utilizamos libretas o agendas que terminan siendo olvidadas, o anotamos de
 manera dispersa de tal manera que perdemos de vista la prioridad y el propósito
 de la nota lo cual da como resultado una nota perdida.
 
-![Shows CRUD functionalities](https://raw.githubusercontent.com/florenciasilva/lab-notes/master/demo-crud.gif?token=AGJBHNTVAQRWOVF2IGMP6FK5NVFAS)
-
 El objetivo principal de este proyecto es aprender a construir una _interfaz
-web_ usando el _framework_ elegido. Todos estos frameworks de Frontend atacan el
-mismo problema: **cómo mantener la interfaz y el estado sincronizados**. Así que
-esta experiencia espera familiarizarte con el concepto de _estado de pantalla_,
-y cómo cada cambio sobre el estado se va a ir reflejando en la interfaz (por
-ejemplo, cada vez que agregamos una _nota_, la interfaz debe actualizar la lista
-de notas).
+web_ usando _React_. 
+
+
+## 2. Prototipo de alta fidelidad
+
+(src\images\Home.png)
+(src\images\list.png)
+(src\images\note.png)
+
 
 ## 3. Objetivos de Aprendizaje
 
@@ -65,7 +42,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
+- [x] **Uso de HTML semántico**
 
   <details><summary>Links</summary><p>
 

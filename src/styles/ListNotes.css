@@ -11,7 +11,7 @@ article.container-note {
   border: 5px solid transparent;
   border-image: linear-gradient(to bottom, #CCABD8 0%, #FA897B 26.04%, #FFDD94 50.91%, #D0E6A5 75%, #86E3CE 100%) 1;
   background-color: white;
-  width: 30%;
+  width: 100%;
   height: 100%;
   margin: 0 0 20px;
   display: flex;
@@ -22,20 +22,20 @@ p.title {
   border-top-left-radius: 10px;
   border-bottom: 1px solid gray;
   width: auto;
-  min-height: 30px;
+  height: auto;
   padding: 8px;
-  font-family: 'Arial Narrow';
-  font-size: 25px;
+  font-family: Abril Fatface;
+  font-size: 20px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-align: center;
 }
 
 p.text {
   width: auto;
-  min-height: 100px;
+  height: auto;
   font-family: 'Arial Narrow';
-  font-size: 35px;
+  font-size: 30px;
   padding: 8px;
 
 }
