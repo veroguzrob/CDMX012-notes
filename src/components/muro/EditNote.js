@@ -24,11 +24,12 @@ function EditNote() {
   useEffect(() => {
 
     const getData = async () => {
+
       return await getNote(params.idNote)
     }
     getData().then((data) => { setDataNote(data) })
 
-  }, [])
+  }, [params])
 
   const navigate = useNavigate()
   return (
