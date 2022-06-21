@@ -11,10 +11,11 @@ export const getNote = async (idNote) => {
   const notadesdeinternet = await getDoc(docRef);
 
   if (notadesdeinternet.exists()) {
+
     return notadesdeinternet.data()
+
   } else {
-    // doc.data() will be undefined in this case
-    console.log("No such document!");
+
   }
 }
 
