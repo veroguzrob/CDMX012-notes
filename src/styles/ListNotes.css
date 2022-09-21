@@ -36,7 +36,8 @@ p.text {
   height: auto;
   font-family: 'Arial Narrow';
   font-size: 30px;
-  padding: 8px;
+  padding: 20px;
+  text-align: justify;
 
 }
 

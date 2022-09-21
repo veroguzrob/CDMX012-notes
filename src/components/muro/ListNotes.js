@@ -4,7 +4,6 @@ import { onGetNotes } from "../../lib/firestore";
 import iconEdit from "../../images/edit.png"
 import { useNavigate } from "react-router-dom";
 
-
 function ListNotes() {
 
   useEffect(() => {
@@ -13,8 +12,7 @@ function ListNotes() {
 
       querySnapShot.forEach((doc) => {
         const allNotes = doc.data();
-        notesData.push({ ...allNotes, id: doc.id });
-
+        notesData.push({ ...allNotes, id: doc.id, });
       });
       setNotes(notesData)
 

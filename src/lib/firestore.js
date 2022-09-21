@@ -8,11 +8,11 @@ export const onGetNotes = (callback) => onSnapshot(collection(db, 'notes'), call
 
 export const getNote = async (idNote) => {
   const docRef = doc(db, "notes", idNote);
-  const notadesdeinternet = await getDoc(docRef);
+  const notesList = await getDoc(docRef);
 
-  if (notadesdeinternet.exists()) {
+  if (notesList.exists()) {
 
-    return notadesdeinternet.data()
+    return notesList.data()
 
   } else {
 
